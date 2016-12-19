@@ -1,16 +1,16 @@
 platform :ios, '6.0'
 
-target :'pop-tests-ios', :exclusive => true do
+target :'pop-tests-ios' do
   pod 'OCMock', '~> 2.2'
 end
 
-target :'pop-tests-tvos', :exclusive => true do
+target :'pop-tests-tvos' do
   platform :tvos, "9.0"
 
   pod 'OCMock', '~> 2.2'
 end
 
-target :'pop-tests-osx', :exclusive => true do
+target :'pop-tests-osx' do
   platform :osx, '10.8'
   pod 'OCMock', '~> 2.2'
 end
