@@ -12,6 +12,8 @@
 #import <pop/POPDefines.h>
 #import <pop/POPSpringAnimation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  @abstract The current drag coefficient.
  @discussion A value greater than 1.0 indicates Simulator slow-motion animations are enabled. Defaults to 1.0.
@@ -41,3 +43,5 @@ extern CGFloat POPAnimationDragCoefficient();
 + (void)convertTension:(CGFloat)tension friction:(CGFloat)friction toBounciness:(CGFloat *)outBounciness speed:(CGFloat *)outSpeed;
 
 @end
+
+NS_ASSUME_NONNULL_END

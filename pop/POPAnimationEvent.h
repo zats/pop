@@ -9,6 +9,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  @abstract Enumeraton of animation event types.
  */
@@ -67,3 +69,5 @@ typedef NS_ENUM(NSUInteger, POPAnimationEventType) {
 @property (readonly, nonatomic, strong) id velocity;
 
 @end
+
+NS_ASSUME_NONNULL_END

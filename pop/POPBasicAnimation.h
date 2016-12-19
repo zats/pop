@@ -9,6 +9,8 @@
 
 #import <pop/POPPropertyAnimation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  @abstract A concrete basic animation class.
  @discussion Animation is achieved through interpolation.
@@ -69,3 +71,5 @@
 @property (strong, nonatomic) CAMediaTimingFunction *timingFunction;
 
 @end
+
+NS_ASSUME_NONNULL_END

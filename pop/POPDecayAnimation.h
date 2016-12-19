@@ -9,6 +9,8 @@
 
 #import <pop/POPPropertyAnimation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  @abstract A concrete decay animation class.
  @discussion Animation is achieved through gradual decay of animation value.
@@ -55,7 +57,7 @@
 /**
  The to value is derived based on input velocity and deceleration.
  */
-- (void)setToValue:(id)toValue NS_UNAVAILABLE;
+- (void)setToValue:(nullable id)toValue NS_UNAVAILABLE;
 
 /**
  @abstract The reversed velocity.
@@ -64,3 +66,5 @@
 - (id)reversedVelocity;
 
 @end
+
+NS_ASSUME_NONNULL_END

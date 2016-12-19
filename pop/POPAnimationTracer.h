@@ -11,6 +11,8 @@
 
 #import <pop/POPAnimationEvent.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class POPAnimation;
 
 /**
@@ -58,3 +60,5 @@
 @property (nonatomic, assign) BOOL shouldLogAndResetOnCompletion;
 
 @end
+
+NS_ASSUME_NONNULL_END

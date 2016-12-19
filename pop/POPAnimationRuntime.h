@@ -13,6 +13,8 @@
 
 #import "POPVector.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 enum POPValueType
 {
   kPOPValueUnknown = 0,
@@ -101,3 +103,5 @@ NS_INLINE NSString *POPStringFromBOOL(BOOL value)
 {
   return value ? @"YES" : @"NO";
 }
+
+NS_ASSUME_NONNULL_END

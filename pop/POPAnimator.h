@@ -9,6 +9,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol POPAnimatorDelegate;
 
 /**
@@ -45,3 +47,5 @@
 - (void)animatorDidAnimate:(POPAnimator *)animator;
 
 @end
+
+NS_ASSUME_NONNULL_END

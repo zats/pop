@@ -12,6 +12,8 @@
 #import <pop/POPAnimationTracer.h>
 #import <pop/POPGeometry.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class CAMediaTimingFunction;
 
 /**
@@ -148,7 +150,7 @@ When combined with the autoreverses property, a singular animation is effectivel
  @param key The key used to identify the animation.
  @discussion The 'key' may be any string such that only one animation per unique key is added per object.
  */
-- (void)pop_addAnimation:(POPAnimation *)anim forKey:(NSString *)key;
+- (void)pop_addAnimation:(POPAnimation *)anim forKey:(nullable NSString *)key;
 
 /**
  @abstract Remove all animations attached to the receiver.
@@ -159,7 +161,7 @@ When combined with the autoreverses property, a singular animation is effectivel
  @abstract Remove any animation attached to the receiver for 'key'.
  @param key The key used to identify the animation.
  */
-- (void)pop_removeAnimationForKey:(NSString *)key;
+- (void)pop_removeAnimationForKey:(nullable NSString *)key;
 
 /**
  @abstract Returns an array containing the keys of all animations currently attached to the receiver.
@@ -186,3 +188,5 @@ When combined with the autoreverses property, a singular animation is effectivel
 @interface POPAnimation (NSCopying) <NSCopying>
 
 @end
+
+NS_ASSUME_NONNULL_END

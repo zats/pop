@@ -9,6 +9,8 @@
 
 #import <pop/POPAnimation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class POPCustomAnimation;
 
 /**
@@ -44,3 +46,5 @@ typedef BOOL (^POPCustomAnimationBlock)(id target, POPCustomAnimation *animation
 @property (readonly, nonatomic) CFTimeInterval elapsedTime;
 
 @end
+
+NS_ASSUME_NONNULL_END

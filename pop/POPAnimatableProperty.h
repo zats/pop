@@ -13,6 +13,8 @@
 
 #import <pop/POPDefines.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class POPMutableAnimatableProperty;
 
 /**
@@ -35,7 +37,7 @@
  @return The animatable property with name if it exists, otherwise a newly created instance configured by block.
  @discussion Custom properties should use reverse-DNS naming. A newly created instance is only mutable in the scope of block. Once constructed, a property becomes immutable.
  */
-+ (id)propertyWithName:(NSString *)name initializer:(void (^)(POPMutableAnimatableProperty *prop))block;
++ (id)propertyWithName:(NSString *)name initializer:( void (^ _Nullable)(POPMutableAnimatableProperty *prop))block;
 
 /**
  @abstract The name of the property.
@@ -249,3 +251,5 @@ extern NSString * const kPOPSCNNodeScaleZ;
 extern NSString * const kPOPSCNNodeScaleXY;
 
 #endif
+
+NS_ASSUME_NONNULL_END

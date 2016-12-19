@@ -9,6 +9,8 @@
 
 #import <pop/POPPropertyAnimation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  @abstract A concrete spring animation class.
  @discussion Animation is achieved through modeling spring dynamics.
@@ -65,3 +67,5 @@
 @property (assign, nonatomic) CGFloat dynamicsMass;
 
 @end
+
+NS_ASSUME_NONNULL_END
